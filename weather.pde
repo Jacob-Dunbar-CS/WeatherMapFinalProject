@@ -338,15 +338,15 @@ void EdmontonPage() {
   text("Sunrise Time: "+sunriseReadable[0],width/32,415);
   text("Sunset Time: "+sunsetReadable[0],width/32,460);
   
-  if(weatherDesc[0] == "thunderstorm with light rain" || weatherDesc[0] == "thunderstorm with rain" || weatherDesc[0] == "thunderstorm with heavy rain" || weatherDesc[0] == "light thunderstorm" || weatherDesc[0] == "thunderstorm" || weatherDesc[0] == "heavy thunderstorm" || weatherDesc[0] == "ragged thunderstorm" || weatherDesc[0] == "thunderstorm with light drizzle" || weatherDesc[0] == "thunderstorm with drizzle" || weatherDesc[0] == "thunderstorm with heavy drizzle") {
-    image(lightning,100,5);
-  }else if (weatherDesc[0] == "light intensity drizzle" || weatherDesc[0] == "drizzle" || weatherDesc[0] == "heavy intensity drizzle" || weatherDesc[0] == "light intensity drizzle rain" || weatherDesc[0] == "drizzle rain" || weatherDesc[0] == "heavy intensity drizzle rain" || weatherDesc[0] == "shower rain and drizzle" || weatherDesc[0] == "heavy shower rain and drizzle" || weatherDesc[0] == "shower drizzle" || weatherDesc[0] == "light rain" || weatherDesc[0] == "moderate rain" || weatherDesc[0] == "heavy intensity rain" || weatherDesc[0] == "very heavy rain" || weatherDesc[0] == "extreme rain" || weatherDesc[0] == "freezing rain" || weatherDesc[0] == "light intensity shower rain" || weatherDesc[0] == "shower rain" || weatherDesc[0] == "heavy intensity shower rain" || weatherDesc[0] == "ragged shower rain"){
-   image(rain,100,5); 
-  }else if (weatherDesc[0] == "light snow" || weatherDesc[0] == "snow" || weatherDesc[0] == "heavy snow" || weatherDesc[0] == "sleet" || weatherDesc[0] == "shower sleet" || weatherDesc[0] == "light rain and snow" || weatherDesc[0] == "rain and snow" || weatherDesc[0] == "light shower snow" || weatherDesc[0] == "shower snow" || weatherDesc[0] == "heavy shower snow"){
-    image(snow,100,5);
-  }else if (weatherDesc[0] == "few clouds" || weatherDesc[0] == "scattered clouds" || weatherDesc[0] == "broken clouds" || weatherDesc[0] == "overcast clouds") {
-    image(cloud,100,5);
-  }else if(weatherDesc[0]=="clear sky"){
+  if(weatherDesc[0].equals("thunderstorm with light rain") == true || weatherDesc[0].equals("thunderstorm with rain") == true || weatherDesc[0].equals("thunderstorm with heavy rain") == true || weatherDesc[0].equals("light thunderstorm") == true || weatherDesc[0].equals("thunderstorm") == true || weatherDesc[0].equals("heavy thunderstorm") == true || weatherDesc[0].equals("ragged thunderstorm") == true || weatherDesc[0].equals("thunderstorm with light drizzle") == true || weatherDesc[0].equals("thunderstorm with drizzle") == true || weatherDesc[0].equals("thunderstorm with heavy drizzle") == true ) {
+    image(lightning,300,15);
+  }else if (weatherDesc[0].equals("light intensity drizzle") == true || weatherDesc[0].equals("drizzle") == true || weatherDesc[0].equals("heavy intensity drizzle") == true || weatherDesc[0].equals("light intensity drizzle rain") == true || weatherDesc[0].equals("drizzle rain") == true || weatherDesc[0].equals("heavy intensity drizzle rain") == true || weatherDesc[0].equals("shower rain and drizzle") == true || weatherDesc[0].equals("heavy shower rain and drizzle") == true || weatherDesc[0].equals("shower drizzle") == true || weatherDesc[0].equals("light rain") == true || weatherDesc[0].equals("moderate rain") == true || weatherDesc[0].equals("heavy intensity rain") == true || weatherDesc[0].equals("very heavy rain") == true || weatherDesc[0].equals("extreme rain") == true || weatherDesc[0].equals("freezing rain") == true || weatherDesc[0].equals("light intensity shower rain") ==true  || weatherDesc[0].equals("shower rain") ==true  || weatherDesc[0].equals("heavy intensity shower rain") ==true  || weatherDesc[0].equals("ragged shower rain") == true){
+   image(rain,300,15); 
+  }else if (weatherDesc[0].equals("light snow") == true || weatherDesc[0].equals("snow") == true || weatherDesc[0].equals("heavy snow") == true || weatherDesc[0].equals("sleet") == true || weatherDesc[0].equals("shower sleet") == true || weatherDesc[0].equals("light rain and snow") == true || weatherDesc[0].equals("rain and snow") == true || weatherDesc[0].equals("light shower snow") == true || weatherDesc[0].equals("shower and snow") == true || weatherDesc[0].equals("heavy shower and snow") == true){
+    image(snow,300,15);
+  }else if (weatherDesc[0].equals("few clouds") == true || weatherDesc[0].equals("scattered clouds") == true || weatherDesc[0].equals("broken clouds") == true || weatherDesc[0].equals("overcast clouds") == true) {
+    image(cloud,300,15);
+  }else if(weatherDesc[0].equals("clear sky")==true){
    image(sun,300,15); 
   }
 }
@@ -370,6 +370,18 @@ void CalgaryPage() {
   text("Wind Speed: "+windSpd[1]+"m/s",width/32,370);
   text("Sunrise Time: "+sunriseReadable[1],width/32,415);
   text("Sunset Time: "+sunsetReadable[1],width/32,460);
+  
+  if(weatherDesc[1].equals("thunderstorm with light rain") == true || weatherDesc[1].equals("thunderstorm with rain") == true || weatherDesc[1].equals("thunderstorm with heavy rain") == true || weatherDesc[1].equals("light thunderstorm") == true || weatherDesc[1].equals("thunderstorm") == true || weatherDesc[1].equals("heavy thunderstorm") == true || weatherDesc[1].equals("ragged thunderstorm") == true || weatherDesc[1].equals("thunderstorm with light drizzle") == true || weatherDesc[1].equals("thunderstorm with drizzle") == true || weatherDesc[1].equals("thunderstorm with heavy drizzle") == true ) {
+    image(lightning,300,15);
+  }else if (weatherDesc[1].equals("light intensity drizzle") == true || weatherDesc[1].equals("drizzle") == true || weatherDesc[1].equals("heavy intensity drizzle") == true || weatherDesc[1].equals("light intensity drizzle rain") == true || weatherDesc[1].equals("drizzle rain") == true || weatherDesc[1].equals("heavy intensity drizzle rain") == true || weatherDesc[1].equals("shower rain and drizzle") == true || weatherDesc[1].equals("heavy shower rain and drizzle") == true || weatherDesc[1].equals("shower drizzle") == true || weatherDesc[1].equals("light rain") == true || weatherDesc[1].equals("moderate rain") == true || weatherDesc[1].equals("heavy intensity rain") == true || weatherDesc[1].equals("very heavy rain") == true || weatherDesc[1].equals("extreme rain") == true || weatherDesc[1].equals("freezing rain") == true || weatherDesc[1].equals("light intensity shower rain") ==true  || weatherDesc[1].equals("shower rain") ==true  || weatherDesc[1].equals("heavy intensity shower rain") ==true  || weatherDesc[1].equals("ragged shower rain") == true){
+   image(rain,300,15); 
+  }else if (weatherDesc[1].equals("light snow") == true || weatherDesc[1].equals("snow") == true || weatherDesc[1].equals("heavy snow") == true || weatherDesc[1].equals("sleet") == true || weatherDesc[1].equals("shower sleet") == true || weatherDesc[1].equals("light rain and snow") == true || weatherDesc[1].equals("rain and snow") == true || weatherDesc[1].equals("light shower snow") == true || weatherDesc[1].equals("shower and snow") == true || weatherDesc[1].equals("heavy shower and snow") == true){
+    image(snow,300,15);
+  }else if (weatherDesc[1].equals("few clouds") == true || weatherDesc[1].equals("scattered clouds") == true || weatherDesc[1].equals("broken clouds") == true || weatherDesc[1].equals("overcast clouds") == true) {
+    image(cloud,230,15);
+  }else if(weatherDesc[1].equals("clear sky")==true){
+   image(sun,300,15); 
+  }
 }
 
 void VancouverPage() {
@@ -391,4 +403,16 @@ void VancouverPage() {
   text("Wind Speed: "+windSpd[2]+"m/s",width/32,370);
   text("Sunrise Time: "+sunriseReadable[2],width/32,415);
   text("Sunset Time: "+sunsetReadable[2],width/32,460);
+  
+  if(weatherDesc[2].equals("thunderstorm with light rain") == true || weatherDesc[2].equals("thunderstorm with rain") == true || weatherDesc[2].equals("thunderstorm with heavy rain") == true || weatherDesc[2].equals("light thunderstorm") == true || weatherDesc[2].equals("thunderstorm") == true || weatherDesc[2].equals("heavy thunderstorm") == true || weatherDesc[2].equals("ragged thunderstorm") == true || weatherDesc[2].equals("thunderstorm with light drizzle") == true || weatherDesc[2].equals("thunderstorm with drizzle") == true || weatherDesc[2].equals("thunderstorm with heavy drizzle") == true ) {
+    image(lightning,300,15);
+  }else if (weatherDesc[2].equals("light intensity drizzle") == true || weatherDesc[2].equals("drizzle") == true || weatherDesc[2].equals("heavy intensity drizzle") == true || weatherDesc[2].equals("light intensity drizzle rain") == true || weatherDesc[2].equals("drizzle rain") == true || weatherDesc[2].equals("heavy intensity drizzle rain") == true || weatherDesc[2].equals("shower rain and drizzle") == true || weatherDesc[2].equals("heavy shower rain and drizzle") == true || weatherDesc[2].equals("shower drizzle") == true || weatherDesc[2].equals("light rain") == true || weatherDesc[2].equals("moderate rain") == true || weatherDesc[2].equals("heavy intensity rain") == true || weatherDesc[2].equals("very heavy rain") == true || weatherDesc[2].equals("extreme rain") == true || weatherDesc[2].equals("freezing rain") == true || weatherDesc[2].equals("light intensity shower rain") ==true  || weatherDesc[2].equals("shower rain") ==true  || weatherDesc[2].equals("heavy intensity shower rain") ==true  || weatherDesc[2].equals("ragged shower rain") == true){
+   image(rain,300,15); 
+  }else if (weatherDesc[2].equals("light snow") == true || weatherDesc[2].equals("snow") == true || weatherDesc[2].equals("heavy snow") == true || weatherDesc[2].equals("sleet") == true || weatherDesc[2].equals("shower sleet") == true || weatherDesc[2].equals("light rain and snow") == true || weatherDesc[2].equals("rain and snow") == true || weatherDesc[2].equals("light shower snow") == true || weatherDesc[2].equals("shower and snow") == true || weatherDesc[2].equals("heavy shower and snow") == true){
+    image(snow,300,15);
+  }else if (weatherDesc[2].equals("few clouds") == true || weatherDesc[2].equals("scattered clouds") == true || weatherDesc[2].equals("broken clouds") == true || weatherDesc[2].equals("overcast clouds") == true) {
+    image(cloud,300,15);
+  }else if(weatherDesc[2].equals("clear sky")==true){
+   image(sun,300,15); 
+  }
 }
