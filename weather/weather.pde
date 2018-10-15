@@ -218,10 +218,10 @@ void keyPressed() {
         if(menuCntrl<=0){
           
           menuCntrl=3;
-          navigate.play();
+          //navigate.play();
         }else{
           menuCntrl--;
-          navigate.play();
+          //navigate.play();
         }
       }
     }
@@ -230,10 +230,10 @@ void keyPressed() {
         if(menuCntrl>=3){
           
           menuCntrl=0;
-          navigate.play();
+          //navigate.play();
         }else{
           menuCntrl++;
-          navigate.play();
+          //navigate.play();
         }
       } 
     }
@@ -241,19 +241,19 @@ void keyPressed() {
       if(page==3){
         if(menuCntrl==0){
          page = 0;
-         select.play();
+         //select.play();
         }
         if(menuCntrl==1){
          page = 1;
-         select.play();
+         //select.play();
         }
         if(menuCntrl==2){
          page = 2;
-        select.play();
+        //select.play();
         }
         if(menuCntrl==3){
          exit();
-         select.play();
+         //select.play();
         }
       }
     }
@@ -261,7 +261,7 @@ void keyPressed() {
     if (keyCode == BACKSPACE){
       if (page != 3) {
        page = 3;
-       select.play();
+       //select.play();
       }
     }
   }
